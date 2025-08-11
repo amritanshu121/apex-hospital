@@ -1,0 +1,831 @@
+.aboutPage {
+  min-height: 100vh;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+  padding: 4rem 0;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.7;
+}
+
+.heroImage {
+  position: relative;
+}
+
+.hospitalImage {
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  height: auto;
+}
+
+.videoContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.videoTitle {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.visionMissionSection {
+  padding: 3rem 0;
+  background: white;
+}
+
+.visionMissionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.visionCard,
+.missionCard,
+.valuesCard {
+  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.visionCard:hover,
+.missionCard:hover,
+.valuesCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardIcon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.visionCard h3,
+.missionCard h3,
+.valuesCard h3 {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.visionCard p,
+.missionCard p,
+.valuesCard p {
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.aboutContent {
+  padding: 3rem 0;
+  background: var(--bg-light);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.textContent h2 {
+  color: var(--primary-green);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.textContent p {
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.highlights {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-top: 2rem;
+}
+
+.highlights h3 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlights li {
+  padding: 0.5rem 0;
+  color: black;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+.achievementsSection {
+  padding: 5rem 0;
+  background: white;
+}
+
+.achievementsSection h2 {
+  text-align: center;
+  color: var(--primary-green);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.achievementCard {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.achievementCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.achievementIcon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+}
+
+.achievementCard h3 {
+  color: var(--primary-green);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.achievementCard p {
+  color: black;
+  font-size: 0.95rem;
+}
+
+/* Enhanced Team Section */
+.teamSection {
+  padding: 5rem 0;
+  background: var(--bg-light);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  color: var(--primary-green);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.sectionHeader p {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.teamCard {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.teamCard:hover {
+  transform: translateY(-8px);
+}
+
+.cardFrame {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cardFrame::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, #3B82F6, #10B981, #F59E0B, #EF4444);
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.teamCard:hover .cardFrame::before {
+  opacity: 1;
+}
+
+.teamCard:hover .cardFrame {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.memberImage {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.memberImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(16, 185, 129, 0.9));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.teamCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+.teamCard:hover .memberImage img {
+  transform: scale(1.05);
+}
+
+.viewDetails {
+  background: white;
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.teamCard:hover .viewDetails {
+  transform: translateY(0);
+}
+
+.memberInfo {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc 0%, white 100%);
+}
+
+.memberInfo h3 {
+  color: #1e40af;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.position {
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.specialization {
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.experience {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  color: orange;
+}
+
+.cardFooter span {
+  color: crimson;
+  font-size: 1rem;
+  font-style: italic;
+}
+/* popup */
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+}
+
+.modalContent {
+  background: white;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ef4444;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.closeButton:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+.modalHeader {
+  background: linear-gradient(135deg, #3B82F6, #10B981);
+  color: white;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.modalImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modalProfileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalBasicInfo h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.modalPosition {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fbbf24;
+  margin-bottom: 0.25rem;
+}
+
+.modalSpecialization {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.modalExperience {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.infoIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.modalBody {
+  padding: 2rem;
+}
+
+.modalSection {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modalSection:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.modalSection h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e40af;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.sectionIcon {
+  width: 24px;
+  height: 24px;
+  color: #3B82F6;
+}
+
+.modalSection p {
+  color: #374151;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.modalList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modalList li {
+  padding: 0.75rem 0;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+  padding-left: 2rem;
+  line-height: 1.6;
+}
+
+.modalList li:last-child {
+  border-bottom: none;
+}
+
+.modalList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  color: #10B981;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.expertiseTag {
+  background: linear-gradient(135deg, #3B82F6, #10B981);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.qualifications {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #3B82F6;
+  font-style: italic;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.locationSection {
+  padding: 5rem 0;
+  background: white;
+}
+
+.locationContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.locationInfo h2 {
+  color: var(--primary-green);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.locationInfo > p {
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.addressDetails h3 {
+  color: var(--primary-green);
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.addressDetails p {
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+.responsiveMap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.responsiveMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+
+  .visionMissionGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .textContent h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .locationContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .locationInfo h2 {
+    font-size: 2rem;
+  }
+
+  .modalOverlay {
+    padding: 1rem;
+  }
+
+  .modalContent {
+    max-height: 95vh;
+  }
+
+  .modalHeader {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .modalImage {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .modalBasicInfo h2 {
+    font-size: 1.5rem;
+  }
+
+  .modalBody {
+    padding: 1.5rem;
+  }
+
+  .expertiseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .memberImage {
+    height: 300px;
+  }
+
+  .memberInfo {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroText h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .heroText p{
+    text-align: center;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .visionCard,
+  .missionCard,
+  .valuesCard {
+    padding: 2rem;
+  }
+
+  .modalOverlay {
+    padding: 0.5rem;
+  }
+
+  .modalBody {
+    padding: 1rem;
+  }
+
+  .modalSection h3 {
+    font-size: 1.1rem;
+  }
+
+  .memberImage {
+    height: 250px;
+  }
+
+  .memberInfo {
+    padding: 1rem;
+  }
+
+  .memberInfo h3 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,384 @@
+.askDoctorPage {
+  min-height: 100vh;
+  background-color: #F9FAFB; /* Very light gray background */
+  padding: 4rem 0;
+  font-family: 'Inter', sans-serif;
+  color: #333333; /* Dark gray for main text */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #E0E6ED; /* Light gray for borders */
+}
+
+.pageHeader h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333333; /* Dark gray for main text */
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.pageHeader h1 svg {
+  color: #4A90E2; /* A friendly, clear blue */
+  stroke-width: 2.5px;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: #666666; /* Medium gray for secondary text */
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Main content takes 2/3, sidebar 1/3 */
+  gap: 3rem;
+  align-items: start; /* Align items to the top */
+}
+
+.mainContent {
+  background-color: #FFFFFF; /* White for cards */
+  border-radius: 1rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  border: 1px solid #E0E6ED; /* Light gray for borders */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section {
+  background-color: #FFFFFF; /* White for cards */
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  border: 1px solid #E0E6ED; /* Light gray for borders */
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333333; /* Dark gray for main text */
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #4A90E2; /* More prominent underline */
+  padding-bottom: 0.75rem;
+  display: inline-block; /* Make border only as wide as text */
+}
+
+.infoCard {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #E0E6ED; /* Light gray for borders */
+}
+
+.iconWrap {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  background-color: #4A90E2; /* A friendly, clear blue */
+  color: #FFFFFF; /* White for cards */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrap svg {
+  width: 36px;
+  height: 36px;
+}
+
+.infoCard h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333333; /* Dark gray for main text */
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.infoCard p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #666666; /* Medium gray for secondary text */
+}
+
+.questionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.questionList li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333333; /* Dark gray for main text */
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.questionList li:hover {
+  color: #4A90E2; /* A friendly, clear blue */
+  transform: translateX(5px);
+}
+
+.questionList li::before {
+  content: '✔'; /* Unicode checkmark */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em;
+  color: #50C878; /* Emerald green for checks */
+  font-weight: bold;
+}
+
+.noticeCard {
+  background-color: #FFF8E1; /* Light yellow for warnings */
+  color: #B78C00; /* Dark yellow for warning text */
+  border: 1px solid #ffecb3;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(255, 230, 150, 0.3);
+}
+
+.noticeCard p {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.noticeCard ul {
+  list-style: none; /* Remove default disc */
+  padding-left: 0;
+  margin: 0;
+}
+
+.noticeCard li {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.noticeCard li::before {
+  content: '•'; /* Custom bullet point */
+  position: absolute;
+  left: 0;
+  color: #B78C00; /* Dark yellow for warning text */
+  font-weight: bold;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faqItem {
+  background-color: #F9FAFB; /* Slightly darker background for FAQ items */
+  border: 1px solid #E0E6ED; /* Light gray for borders */
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.faqItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #4A90E2; /* A friendly, clear blue */
+}
+
+.faqItem h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #4A90E2; /* A friendly, clear blue */
+  margin-bottom: 0.6rem;
+}
+
+.faqItem p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #666666; /* Medium gray for secondary text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr; /* Stack columns on tablets */
+  }
+
+  .mainContent,
+  .sidebar .section {
+    max-width: 768px; /* Limit width for better readability on larger tablets */
+    margin: 0 auto;
+  }
+
+  .pageHeader h1 {
+    font-size: 2.8rem;
+  }
+
+  .pageHeader p {
+    font-size: 1.1rem;
+  }
+
+  .mainContent {
+    padding: 2.5rem;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .infoCard h2 {
+    font-size: 2rem;
+  }
+
+  .iconWrap {
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconWrap svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .questionList li {
+    font-size: 1.05rem;
+  }
+
+  .faqItem h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .askDoctorPage {
+    padding: 2.5rem 0;
+  }
+
+  .pageHeader h1 {
+    font-size: 2.2rem;
+    gap: 0.75rem;
+  }
+
+  .pageHeader h1 svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pageHeader p {
+    font-size: 1rem;
+  }
+
+  .mainContent,
+  .section {
+    padding: 2rem;
+  }
+
+  .infoCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .infoCard h2 {
+    font-size: 1.8rem;
+  }
+
+  .iconWrap {
+    margin-bottom: 0.5rem;
+  }
+
+  .section h3 {
+    font-size: 1.6rem;
+  }
+
+  .questionList li {
+    padding-left: 1.8rem;
+    font-size: 1rem;
+  }
+
+  .questionList li::before {
+    font-size: 1.1em;
+  }
+
+  .noticeCard,
+  .faqItem {
+    padding: 1.5rem;
+  }
+
+  .faqItem h4 {
+    font-size: 1.05rem;
+  }
+
+  .faqItem p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageHeader h1 {
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pageHeader h1 svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mainContent,
+  .section {
+    padding: 1.5rem;
+  }
+
+  .infoCard h2 {
+    font-size: 1.6rem;
+  }
+
+  .questionList li {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .questionList li::before {
+    font-size: 1em;
+  }
+
+  .noticeCard p {
+    font-size: 1rem;
+  }
+
+  .noticeCard li {
+    font-size: 0.9rem;
+  }
+}

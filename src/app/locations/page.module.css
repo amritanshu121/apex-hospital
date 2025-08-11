@@ -1,0 +1,169 @@
+.locationsPage {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageHeader h1 {
+  font-size: 3rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.locationContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+
+.mapContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+.responsiveMap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.responsiveMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.infoCard h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.infoItem:last-child {
+  margin-bottom: 0;
+}
+
+.infoItem svg {
+  color: var(--primary-green);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.infoItem strong {
+  display: block;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.infoItem p {
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.facilitiesCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.facilitiesCard h3 {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.facilitiesCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facilitiesCard li {
+  padding: 0.75rem 0;
+  color: black;
+  position: relative;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.facilitiesCard li:last-child {
+  border-bottom: none;
+}
+
+.facilitiesCard li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .locationsPage {
+    padding: 1rem 0;
+  }
+
+  .pageHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .locationContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mapSection {
+    position: static;
+  }
+
+  .infoCard,
+  .facilitiesCard {
+    padding: 2rem;
+  }
+}
